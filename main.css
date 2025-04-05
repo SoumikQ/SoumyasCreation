@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Calgary_DEMO.ttf') format('truetype');
+         /* url('Moglan_DEMO.ttf') format('ttf'); */
+
+  }
+
+
+.heading_font{
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 70px;
+}
+.special_font{
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 60px;
+}
+.heading_pack{
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+/* .special{
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+} */
+/* @media (max-width: 768px){
+    .special{
+        min-height: 50vh;
+    }
+} */
+
+.card {
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    border: none;
+  }

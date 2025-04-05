@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+  .immg2 {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+    .immg {
+      position: relative;
+      left: 12px;
+      width: fit-content;
+    }
+
+    .immg2 {
+        position: relative;
+        right: 12px;
+        /* bottom: 50px; */
+      }
+  }
