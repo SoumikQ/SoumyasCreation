@@ -70,6 +70,12 @@ header .menu{
     max-width: 80%;
     z-index: 1;
 }
+@media screen and (max-width: 600px) {
+    .slider .list .item .content{
+        border: 2px solid white;
+        top: 40%;
+    }
+  }
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -165,6 +171,13 @@ header .menu{
 @media screen and (max-width: 678px) {
     .thumbnail{
         justify-content: start;
+        /* border: 2px solid white; */
+        height: 150px;
+        justify-content: center;
+    }
+    .thumbnail .item{
+        height: 100px;
+        width: 60px;
     }
     .slider .list .item .content h2{
         font-size: 60px;
