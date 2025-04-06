@@ -72,7 +72,6 @@ header .menu{
 }
 @media screen and (max-width: 600px) {
     .slider .list .item .content{
-        border: 2px solid white;
         top: 40%;
     }
   }
