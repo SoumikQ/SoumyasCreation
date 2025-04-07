@@ -6,6 +6,12 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 // config param
 let countItem = items.length;
 let itemActive = 0;
+
+// Haburger manye 
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+}
 // event next click
 next.onclick = function(){
     itemActive = itemActive + 1;

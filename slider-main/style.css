@@ -29,9 +29,51 @@ header .menu{
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
     font-weight: 500;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.mobile-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.mobile-menu li {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+@media (max-width: 768px) {
+    header .menu {
+        display: none; /* Hide menu on small screens */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger */
+    }
+
+    .mobile-menu.show {
+        display: block; /* Show when active */
+        animation: slideDown 0.3s ease;
+    }
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 /* css slider */
 .slider{
