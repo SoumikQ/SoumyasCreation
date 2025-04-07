@@ -178,6 +178,9 @@ header .menu{
         height: 100px;
         width: 65px;
     }
+    .thumbnail .item .content{
+        font-size: 10px;
+    }
     .slider .list .item .content h2{
         font-size: 60px;
     }
