@@ -13,7 +13,8 @@ header{
     max-width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    /* grid-template-columns: 50px 1fr 50px; */
+    grid-template-columns: auto 1fr;
     grid-template-rows: 50px;
     justify-content: center;
     align-items: center;
@@ -29,6 +30,7 @@ header .menu{
     margin: 0;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
     font-weight: 500;
 }
@@ -36,6 +38,7 @@ header .menu{
     display: none;
     font-size: 30px;
     cursor: pointer;
+
 }
 .mobile-menu {
     display: none;
@@ -44,7 +47,12 @@ header .menu{
     left: 0;
     width: 100%;
     background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    animation: slideDown 0.3s ease;
+    border: none;
+    border-radius: 30px;
+    z-index: 800;
 }
 .mobile-menu ul {
     list-style: none;
@@ -55,7 +63,6 @@ header .menu{
 .mobile-menu li {
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid #ddd;
 }
 @media (max-width: 768px) {
     header .menu {
@@ -64,11 +71,19 @@ header .menu{
 
     .hamburger {
         display: block; /* Show hamburger */
+        display: flex;
+        justify-content: flex-end;
     }
 
     .mobile-menu.show {
-        display: block; /* Show when active */
+        display: block;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: white;
         animation: slideDown 0.3s ease;
+        border: none;
+        border-radius: 30px;
+        z-index: 800;
     }
 }
 @keyframes slideDown {
@@ -154,7 +169,7 @@ header .menu{
     position: absolute;
     top: 30%;
     right: 50px;
-    z-index: 100;
+    z-index: 50;
 }
 .arrows button{
     background-color: #eee5;
