@@ -1,6 +1,101 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* Loader css  */
+/* From Uiverse.io by G4b413l */ 
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  body.loaded #loader-wrapper {
+    display: none;
+  }
+  #loader-wrapper {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  body.loaded #loader-wrapper {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+/* main div animation for loader  */
+
+/* From Uiverse.io by Ratinax */ 
+.loader {
+    --dim: 3rem;
+    width: var(--dim);
+    height: var(--dim);
+    position: relative;
+    animation: spin988 2s linear infinite;
+  }
+  
+  .loader .circle {
+    --color: #333;
+    --dim: 1.2rem;
+    width: var(--dim);
+    height: var(--dim);
+    background-color: var(--color);
+    position: absolute;
+  }
+  
+  .loader .circle:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .loader .circle:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+  
+  .loader .circle:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .loader .circle:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+  
+  @keyframes spin988 {
+    0% {
+      transform: scale(1) rotate(0);
+    }
+  
+    20%,
+    25% {
+      transform: scale(1.3) rotate(90deg);
+    }
+  
+    45%,
+    50% {
+      transform: scale(1) rotate(180deg);
+    }
+  
+    70%,
+    75% {
+      transform: scale(1.3) rotate(270deg);
+    }
+  
+    95%,
+    100% {
+      transform: scale(1) rotate(360deg);
+    }
+  }
+   
+   
 @font-face {
     font-family: 'MyCustomFont';
     src: url('Calgary_DEMO.ttf') format('truetype');

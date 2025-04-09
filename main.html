@@ -10,9 +10,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="photo frame/style.css">
     <link rel="stylesheet" href="main.css">
+    <script>
+        window.addEventListener("load", function () {
+          document.body.classList.add("loaded");
+        });
+    </script>
 </head>
 <body style="margin: 0; padding: 0; background-color: #e8e8e8;">
 
+    <!-- Loader animation  -->
+
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+    </div>    
         <!-- Navbar & Slider  -->
 
         <iframe style="margin: 0;" src="slider-main/nav_slider.html" width="100%" height="770px" frameborder="0"></iframe>
