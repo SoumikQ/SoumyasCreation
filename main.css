@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'MyCustomFont';
     src: url('Calgary_DEMO.ttf') format('truetype');
@@ -5,6 +8,64 @@
 
   }
 
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes app_left{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes app_right{
+    from{
+        opacity: 0;
+        transform: translateX(+100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.animf{
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.animr{
+    animation: app_right linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.animl{
+    animation: app_left linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.anim{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
 
 .heading_font{
     font-family: 'MyCustomFont', sans-serif;

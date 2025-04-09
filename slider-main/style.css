@@ -33,6 +33,7 @@ header .menu{
     justify-content: flex-end;
     gap: 20px;
     font-weight: 500;
+    text-decoration: none;
 }
 .hamburger {
     display: none;
