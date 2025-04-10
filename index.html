@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +7,429 @@
     <!-- Bootstrap CSS link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="photo frame/style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+<body style="margin: 0; padding: 0; background-color: #e8e8e8;">
 
-<body>
+    <!-- Loader animation  -->
 
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+    </div>    
+        <!-- Navbar & Slider  -->
 
-    <header>
-        
+        <iframe style="margin: 0;" src="slider-main/nav_slider.html" width="100%" height="770px" frameborder="0"></iframe>
 
-                                            <!-- name section  -->
-                                             
-        <div style="height: 75vh; width: 100%; position: absolute;">
-            <img style="height: 75vh; width: 100%; object-fit: cover;" src="simple.png" alt="">
+        <!-- social icons  -->
+
+        <div class="container-fluid"  style="background-color: #131210; position: relative; bottom: 14px;">
+            <div class="d-flex justify-content-center">
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-facebook text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-instagram text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-whatsapp text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-youtube text-white"></i></a></div>
+            </div>
+            <div class="mb-5 text-center">
+                <p style="font-size: 17px;" class="display-6 text-white">Stay connected with us anytime, anywhere! Click on the icons below to reach out directly through your favorite platform.</p>
+                <br>
+            </div>
         </div>
 
-        <div class="container-fluid d-md-block d-sm-block" style="height: 54vh; background-image: linear-gradient(to top, #43434300 0%, rgba(32, 0, 0, 0.884) 100%); position: absolute;">
-            
+        <!-- Heading (selected projects) -->
+        <div class="container-fluid mt-2"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">AND VIEW SOME OF OUR</p></div>
+            <div class="mt-4">
+                <h1 class="heading_font">Selected projects</h1>
+            </div>
         </div>
 
-        <div class="container-fluid d-flex justify-content-center" style="position: absolute;">
+        <!-- Photo Frame Section  -->
+
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-12 d-flex justify-content-center">
-                    <img class="" style="height: 100px;" src="White_LOGO-01.png" alt="logo">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end animl">
+                    <div style="min-height: 500px; width: 500px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0)), url('photo frame/images/img1.jpg'); background-size: cover; background-position: center;" class="immg">
+                        <div style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 class="text-white">View more</h3>
+                            <p class="text-white" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <button><span class="text">View now</span><span>Thanks!</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start animr">
+                    <div style="min-height: 500px; width: 500px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0)), url('photo frame/images/img2.jpg'); background-size: cover; background-position: center; z-index: 1000;" class="immg2 shadow-lg">
+                        <div style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 class="text-white">View more</h3>
+                            <p class="text-white" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, hic? Quibusdam nemo.</p>
+                            <button><span class="text">View now</span><span>Thanks!</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end animl">
+                    <div style="min-height: 500px; width: 500px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0)), url('photo frame/images/img3.jpg'); background-size: cover; background-position: center;" class="d-flex justify-content-end immg shadow-lg">
+                        <div style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 class="text-white">View more</h3>
+                            <p class="text-white" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur.</p>
+                            <button><span class="text">View now</span><span>Thanks!</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start animr">
+                    <div style="min-height: 500px; width: 500px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0)), url('photo frame/images/img4.jpg'); background-size: cover; background-position: center;" class="immg2">
+                        <div style="position: absolute; bottom: 20px; left: 20px;">
+                            <h3 class="text-white">View more</h3>
+                            <p class="text-white" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, hic? Quibusdam nemo.</p>
+                            <button><span class="text">View now</span><span>Thanks!</span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="container-fluid d-md-block d-sm-block cc1 " style="position: absolute;">
 
-            <div class="row d-flex justify-content-center" style="min-height: 360px; max-height: 300px;">
-                <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-end">
-                    <h1 class="shadow-lg">Soumya's<br>Creations<br><span style="font-size: 15px; font-family: 'My', sans-serif;"
-                            class="text-center">
-                            <p>Capturing Moments, Crafting Memories</p>
-                        </span></h1>
-            
-                </div>
-            </div>                                <!-- logo  -->
-
-            
+        <!-- Heading (selected projects) -->
+        <div class="container-fluid mt-3"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div id="pack" class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">SELECT AS PER YOUR NEEDS</p></div>
+            <div class="mt-4">
+                <h1 class="heading_font">Pakcages</h1>
+            </div>
         </div>
-    </header>
 
-    <div class="container d-flex justify-content-center" style="position: relative; top: 500px;">
-        <p class="display-6 text-center" style="font-size: 30px;">Capturing your moments with creativity and perfection.</p>
-    </div>
 
-    <div class="container d-flex justify-content-center" style="position: relative; top: 540px;">
-        <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Book now</span>
-          </button>
-    </div>
+        <!-- Pakcage section 1  -->
 
-    <div class="container sociali d-flex justify-content-center" style="position: relative; top: 580px;">
-        <div class="p-3 m-2"><a href="#"><i class="fs-3 bi bi-facebook"></i></a></div>
-        <div class="p-3 m-2"><a href="#"><i class="fs-3 bi bi-instagram"></i></a></div>
-        <div class="p-3 m-2"><a href="#"><i class="fs-3 bi bi-whatsapp"></i></a></div>
-    </div>
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container">
+            <!-- First row  -->
+            <div class="row d-flex justify-content-center anim">
+                <div class="col-md-3 col-sm-12 text-center d-flex justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                        <h1 class="heading_pack text-white">Basic<br>Photography<br>Packages</h1>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                    <ul class="text-white">
+                        <li class="m-3">Starter Package</li>
+                        <li class="m-3">Standard Package</li>
+                        <li class="m-3"> Premium Package</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 d-md-flex justify-content-center align-items-center d-none d-md-block" style="height: 300px;">
+                    <i class="bi bi-image" style="color: #514947; font-size: 50px;"></i>
+                </div>
+            </div>
+
+            <!-- Second row  -->
+            <div class="row d-flex justify-content-center anim">
+                <div class="col-md-3 col-sm-12 text-center d-md-flex justify-content-center align-items-center d-none d-md-block" style="height: 300px;">
+                        <i class="bi bi-camera-reels" style="color: #514947; font-size: 50px;"></i>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex text-center justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                    <h1 class="heading_pack text-white">Event<br>&<br>Occasions</h1>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                    <ul class="text-white">
+                        <li class="m-3">Wedding Bliss Package</li>
+                        <li class="m-3">Birthday or Baby Shoot</li>
+                        <li class="m-3">Corporate/Branding Shoot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Third row  -->
+            <div class="row d-flex justify-content-center anim">
+                <div class="col-md-3 col-sm-12 text-center d-flex justify-content-center align-items-center shadow-lg" style="height: 300px; background-color: #b78f5b;">
+                        <h1 class="heading_pack text-white">Creative<br>&<br>Themed</h1>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center" style="height: 300px; background-color: #b78f5b;">
+                    <ul class="text-white">
+                        <li class="m-3">Golden Hour</li>
+                        <li class="m-3">Studio Glam Package</li>
+                        <li class="m-3">Beauty, fashion</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 d-md-flex justify-content-center align-items-center shadow-lg d-none d-md-block" style="height: 300px;">
+                    <i class="bi bi-camera" style="color: #b78f5b; font-size: 60px;"></i>
+                </div>
+            </div>
+
+            <!-- Fourth row  -->
+            <div class="row d-flex justify-content-center anim">
+                <div class="col-md-3 col-sm-12 text-center d-md-flex justify-content-center align-items-center d-none d-md-block" style="height: 300px;">
+                        <i class="bi bi-calendar2-event" style="color: #514947; font-size: 50px;"></i>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex text-center justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                    <h1 class="heading_pack text-white">Seasonal<br>Specials</h1>
+                </div>
+                <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center" style="height: 300px; background-color: #514947;">
+                    <ul class="text-white">
+                        <li class="m-3">Christmas</li>
+                        <li class="m-3">Valentine’s Day</li>
+                        <li class="m-3">Monsoon Shoots</li>
+                        <li class="m-3">Diwali & Holi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book now Sction  -->
+
+        <div class="container-fluid mt-3"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">BOOK NOW</p></div>
+        </div>
+
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center g-0">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+                    <!-- From Uiverse.io by guilhermeyohan --> 
+
+                    <div class="subscribe anim">
+                        <p>BOOK NOW</p>
+                        <br>
+                        <input placeholder="Full name" class="subscribe-input" name="name" type="text">
+                        <br><br><br>
+                        <input placeholder="Phone number" class="subscribe-input" name="number" type="text">
+                        <div class="submit-btn">BOOK</div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                    <img class="img-fluid animr" src="images/booking-01.png" alt="image">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-1"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">VISIT NOW TO GET OUR</p></div>
+        </div>
+
+        <!-- Special offfer section  -->
+
+        <div class="container-fluid mt-1"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-3"><br></div>    <!-- For gaping -->  
+        <div class="container-fluid mt-2"><br></div>    <!-- For gaping -->
+        <div class="container-fluid special d-flex justify-content-center align-items-center bg-cover animf" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0)), url('images/special1.jpg'); background-size: cover; background-position: center; height: 750px;">
+            <div style="position: relative; top: 300px;">
+                <h1 class="special_font text-white text-center">Special offer</h1>
+                <p class="text-center text-white mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>obcaecati. Facere.</p>
+            </div>
+        </div>
+
+        <!-- About us Heading  -->
+
+        <div id="about" class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">KNOW MORE</p></div>
+            <div class="mt-4">
+                <h1 class="heading_font">About us</h1>
+            </div>
+        </div>
+
+        <!-- About us section  -->
+
+        <div class="container-fluid mt-3"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5 col-sm-12 d-flex justify-content-center animl">
+                    <div class="card"></div>
+                </div>
+                <div class="col-md-5 d-none d-md-block d-md-flex justify-content-center align-items-center animf">
+                    <div><p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium necessitatibus consequuntur reiciendis quo nostrum quos officiis, excepturi dolorem nulla mollitia fuga distinctio magnam suscipit saepe, illo incidunt itaque officia.</p></div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5 d-none d-md-block d-md-flex justify-content-center align-items-center animf">
+                    <div><p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium necessitatibus consequuntur reiciendis quo nostrum quos officiis, excepturi dolorem nulla mollitia fuga distinctio magnam suscipit saepe, illo incidunt itaque officia.</p></div>
+                </div>
+                <div class="col-md-5 col-sm-12 d-flex justify-content-center mt-5 mt-md-0 animr">
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact us Heading  -->
+
+        <div id="contact" class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">FEEl FREE TO</p></div>
+            <div class="mt-4">
+                <h1 class="heading_font">Contact us</h1>
+            </div>
+        </div>
+
+        <!-- Contact us section  -->
+
+        <div class="container-fluid mt-3"><br></div>    <!-- For gaping -->
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid" style="background-color: #b78f5b;">
+            <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+            <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+            <div class="row d-flex justify-content-center g-0 anim">
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="shadow-lg" style="height: 400px; background-color: #514947;"></div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center shadow-lg">
+                    <div class="" style="height: 400px;">
+                        <div class="row justify-content-center mt-5 text-white">
+                            <div class="col-md-12">
+                              <div class="d-flex align-items-center p-3">
+                                <!-- Icon -->
+                                <div class="me-4">
+                                  <i class="bi bi-geo-alt fs-2"></i>
+                                </div>
+                                <!-- Text -->
+                                <div>
+                                    <h5 class="mb-1">Address</h5>
+                                  <p class="mb-0">Hemlo, Baghila, 700 206</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center text-white">
+                            <div class="col-md-12">
+                              <div class="d-flex align-items-center p-3">
+                                <!-- Icon -->
+                                <div class="me-4">
+                                  <i class="bi bi-telephone fs-3"></i>
+                                </div>
+                                <!-- Text -->
+                                <div>
+                                    <h5 class="mb-1">Phone</h5>
+                                  <p class="mb-0">+91 7872523017</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center text-white">
+                            <div class="col-md-12">
+                              <div class="d-flex align-items-center p-3">
+                                <!-- Icon -->
+                                <div class="me-4">
+                                  <i class="bi bi-whatsapp fs-3"></i>
+                                </div>
+                                <!-- Text -->
+                                <div>
+                                    <h5 class="mb-1">Whatsapp</h5>
+                                  <p class="mb-0">7872523017</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center text-white">
+                            <div class="col-md-12">
+                              <div class="d-flex align-items-center p-3">
+                                <!-- Icon -->
+                                <div class="me-4">
+                                  <i class="bi bi-envelope fs-3"></i>
+                                </div>
+                                <!-- Text -->
+                                <div>
+                                    <h5 class="mb-1">E-mail</h5>
+                                  <p class="mb-0">soumyascretion@gmail.com</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt-1"><br></div>   
+            <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        </div>
+
+
+        <div class="container-fluid mt-5"><br></div>    <!-- For gaping -->
+        <div class="container-fluid text-center mt-5 anim">
+            <div><p style="font-size: 15px; color: #b78f5b; font-weight: 500;" class="display-6">ALMOST DONE</p></div>
+        </div>
+
+
+        <!-- Footer section  -->
+
+        <div class="container-fluid mt-5"><br></div> <!-- For gaping -->
+
+        <div class="container-fluid" style="background-color: #171717;">
+            <div class="container-fluid mt-5"><br></div> <!-- For gaping -->
+            <div class="container-fluid mt-5"><br></div> <!-- For gaping -->
+            <p class="text-center text-white anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum corporis eos maiores adipisci amet harum pariatur quis aspernatur incidunt.</p>
+            <div class="container-fluid mt-5"><br></div> <!-- For gaping -->
+            <div class="row d-flex justify-content-center anim">
+                <div class="col-md-4 text-center text-white">
+                    <h6>Home</h6>
+                    <h6>Gallery</h6>
+                    <h6>About</h6>
+                    <h6>Contact</h6>
+                </div>
+                <div class="col-md-4 text-center text-white">
+                    <h6>Home</h6>
+                    <h6>About</h6>
+                    <h6>Contact</h6>
+                </div>
+                <div class="col-md-4 text-center text-white">
+                    <h6>Home</h6>
+                    <h6>Gallery</h6>
+                    <h6>About</h6>
+                    <h6>Contact</h6>
+                </div>
+            </div>
+            <div class="container-fluid mt-2"><br></div> <!-- For gaping -->
+            <div class="d-flex justify-content-center">
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-facebook text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-instagram text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-whatsapp text-white"></i></a></div>
+                <div class="p-3"><a href="#"><i class="fs-5 bi bi-youtube text-white"></i></a></div>
+            </div>
+            <div class="container-fluid mt-2"><br></div> <!-- For gaping -->
+        </div>
+
+        <div class="container-fluid" style="background-color: #0d0d0c; height: 70px;"><br></div>
+        <!-- For gaping -->
+
+        <!-- End of footer section  -->
+
+
+
+
+
 
 
 
 
 </body>
 
-<!-- Bootstrap Js link  -->
+<script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+</script>
+
+ <script src="app.js"></script>
+ <!-- Bootstrap Js link  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script src="app.js"></script>
-
 </html>
