@@ -205,7 +205,7 @@ html{
   height: 0;
   border-left: 0px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #1a044e;
+  border-bottom: 10px solid #514947;
 }
 
 .subscribe p {
@@ -238,7 +238,7 @@ html{
   border-radius: 30px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  background-color: #0f0092;
+  background-color: #b78f5b;
   color: #FFF;
   padding: 12px 25px;
   display: inline-block;
@@ -250,10 +250,11 @@ html{
   cursor: pointer;
   transition: all .25s ease;
   box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+  z-index: 50;
 }
 
 .subscribe .submit-btn:hover {
-  background-color: #07013d;
+  background-color: #514947;
   box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
 }
 
