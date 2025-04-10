@@ -182,6 +182,7 @@ header .menu{
     font-size: x-large;
     color: #eee;
     transition: .5s;
+    cursor: pointer;
 }
 .arrows button:hover{
     background-color: #eee;
@@ -199,6 +200,7 @@ header .menu{
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
+    cursor: pointer;
 }
 .thumbnail::-webkit-scrollbar{
     width: 0;
