@@ -98,10 +98,9 @@ html{
    
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('Calgary_DEMO.ttf') format('truetype');
-         /* url('Moglan_DEMO.ttf') format('ttf'); */
-
+    src: url('fonts/Calgary_DEMO.ttf') format('truetype');
   }
+
 
 @keyframes appear{
     from{

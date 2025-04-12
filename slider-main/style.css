@@ -5,6 +5,10 @@ body{
     background-color: #010101;
     color: #eee;
 }
+@font-face{
+    font-family: 'Samarkan';
+    src: url('fonts/SAMAN.TTF') format('truetype');
+  }
 svg{
     width: 25px;
 }
@@ -128,6 +132,9 @@ header .menu{
     max-width: 80%;
     z-index: 1;
 }
+.slider .list .item .content .p{
+    font-family: 'Samarkan';
+}
 @media screen and (max-width: 600px) {
     .slider .list .item .content{
         top: 40%;
@@ -139,6 +146,10 @@ header .menu{
 }
 .slider .list .item .content h2{
     font-size: 100px;
+    margin: 0;
+}
+.slider .list .item .content .cust{
+    font-size: 50px;
     margin: 0;
 }
 .slider .list .item.active{
