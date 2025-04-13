@@ -360,11 +360,11 @@ button {
 }
 
 .cardy-back {
-  background-color: #F08A5D;
+  background-color: #eeeeee;
   color: #fff;
   display: flex;
   align-items: center;
-  border: 10px solid #F08A5D;
+  border: 10px solid #eeeeee;
   border-radius: 10px;
   justify-content: center;
   font-size: 24px;
@@ -375,14 +375,14 @@ button {
 .user-picture {
   overflow: hidden;
   object-fit: cover;
-  width: 7rem;
-  height: 7rem;
+  width: 8rem;
+  height: 8rem;
   /* border: 4px solid #514947b9; */
   border: 4px solid #ffffff;
   border-radius: 999px;
   position: relative;
-  bottom: 40px;
-  left: 85px;
+  bottom: 10px;
+  left: 75px;
 }
 
 
@@ -398,7 +398,13 @@ button {
   font-weight: 200;
   font-size: 16px;
 }
-
+.cl{
+  color: #514947;
+}
+.anc{
+  text-decoration: none;
+  color: white;
+}
 
 
 
