@@ -1,0 +1,12 @@
+.container-fluid img{
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 0.8em;
+}
+.con{
+    columns: 300px;
+}
+.anc{
+    text-decoration: none;
+    color: white;
+  }
