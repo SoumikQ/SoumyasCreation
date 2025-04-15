@@ -274,8 +274,12 @@ header .menu{
     .slider .list .item .content .pr{
         font-size: 12px;
     }
-
     .arrows{
         top: 10%;
+    }
+    .slider .list .item .sci{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
