@@ -24,6 +24,9 @@ header{
     align-items: center;
     position: relative;
     z-index: 100;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
 }
 header .logo{
     font-weight: bold;
@@ -182,6 +185,9 @@ header .menu{
     top: 30%;
     right: 50px;
     z-index: 50;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
 }
 .arrows button{
     background-color: #eee5;
@@ -198,6 +204,11 @@ header .menu{
 .arrows button:hover{
     background-color: #eee;
     color: black;
+}
+.thumbnail * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    touch-action: manipulation;
 }
 .thumbnail{
     position: absolute;
@@ -231,8 +242,8 @@ header .menu{
 }
 .thumbnail .item.active{
     filter: brightness(1);
-    /* border: 3px solid rgba(255, 255, 255, 0.842); */
-    /* border-radius: 12px; */
+    border: 2px solid rgba(255, 255, 255, 0.842);
+    border-radius: 12px;
 }
 .thumbnail .item .content{
     position: absolute;
