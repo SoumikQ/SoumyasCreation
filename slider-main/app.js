@@ -28,6 +28,7 @@ prev.onclick = function(){
     }
     showSlider();
 }
+
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();

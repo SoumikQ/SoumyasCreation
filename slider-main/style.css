@@ -241,7 +241,6 @@ header .menu{
 @media screen and (max-width: 678px) {
     .thumbnail{
         justify-content: start;
-        /* border: 2px solid white; */
         height: 150px;
         justify-content: center;
     }
@@ -253,8 +252,15 @@ header .menu{
         font-size: 10px;
     }
     .slider .list .item .content h2{
-        font-size: 60px;
+        font-size: 40px;
     }
+    .slider .list .item .content .cust{
+        font-size: 30px;
+    }
+    .slider .list .item .content .pr{
+        font-size: 12px;
+    }
+
     .arrows{
         top: 10%;
     }
