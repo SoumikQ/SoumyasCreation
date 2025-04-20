@@ -260,9 +260,6 @@ header .menu{
         height: 100px;
         width: 65px;
     }
-    .thumbnail .item.active{
-        border: 1px solid rgba(255, 255, 255, 0.583);
-    }
     .thumbnail .item .content{
         font-size: 10px;
     }
