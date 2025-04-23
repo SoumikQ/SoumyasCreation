@@ -252,8 +252,8 @@ header .menu{
 }
 @media screen and (max-width: 678px) {
     .thumbnail{
-        justify-content: start;
         height: 150px;
+        display: flex;
         justify-content: center;
     }
     .thumbnail .item{

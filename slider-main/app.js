@@ -54,24 +54,28 @@ function showSlider(){
 // function setPositionThumbnail () {
 //     let thumbnailActive = document.querySelector('.thumbnail .item.active');
 //     let rect = thumbnailActive.getBoundingClientRect();
-//     if (rect.left < 0 || rect.right > window.innerWidth) {
+
+//     // Check if slider is visible
+//     let slider = document.querySelector('.slider');
+//     let sliderRect = slider.getBoundingClientRect();
+//     let isSliderInView = sliderRect.top >= 0 && sliderRect.bottom <= window.innerHeight;
+
+//     // Only scroll if thumbnail is outside view AND slider is currently visible
+//     if ((rect.left < 0 || rect.right > window.innerWidth) && isSliderInView) {
 //         thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
 //     }
 // }
 function setPositionThumbnail () {
-    let thumbnailActive = document.querySelector('.thumbnail .item.active');
-    let rect = thumbnailActive.getBoundingClientRect();
+    if (window.innerWidth > 768) { // Only scroll on large screens
+        let thumbnailActive = document.querySelector('.thumbnail .item.active');
+        let rect = thumbnailActive.getBoundingClientRect();
 
-    // Check if slider is visible
-    let slider = document.querySelector('.slider');
-    let sliderRect = slider.getBoundingClientRect();
-    let isSliderInView = sliderRect.top >= 0 && sliderRect.bottom <= window.innerHeight;
-
-    // Only scroll if thumbnail is outside view AND slider is currently visible
-    if ((rect.left < 0 || rect.right > window.innerWidth) && isSliderInView) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
+        if (rect.left < 0 || rect.right > window.innerWidth) {
+            thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
+        }
     }
 }
+
 
 // click thumbnail
 thumbnails.forEach((thumbnail, index) => {
