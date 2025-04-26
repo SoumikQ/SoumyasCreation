@@ -22,10 +22,147 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-    </div>    
+    </div>
+
         <!-- Navbar & Slider  -->
 
-        <iframe style="margin: 0;" src="slider-main/nav_slider.html" width="100%" height="770px" frameborder="0"></iframe>
+        <!-- <iframe style="margin: 0;" src="slider-main/nav_slider.html" width="100%" height="770px" frameborder="0"></iframe> -->
+
+        <header>
+            <div class="logo"><img class="" style="height: 100px;" src="images/White_LOGO-01.png" alt="logo"></div>
+            <ul class="menu">
+                <li><a href="#" style="text-decoration: none; color: white;">Home</a></li>
+                <li><a style="text-decoration: none; color: white;" href="#pack" onclick="parent.scrollToSection('pack')">Pakcages</a></li>
+                <li><a style="text-decoration: none; color: white;" href="#about" onclick="parent.scrollToSection1('about')">About</a></li>
+                <li><a style="text-decoration: none; color: white;" href="#contact" onclick="parent.scrollToSection2('contact')">Contact us</a></li>     
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+        
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="#" style="text-decoration: none; color: white;">Home</a></li>
+                    <li><a style="text-decoration: none; color: white;" href="#pack" onclick="parent.scrollToSection('pack')">Pakcages</a></li>
+                    <li><a style="text-decoration: none; color: white;" href="#about" onclick="parent.scrollToSection1('about')">About</a></li>
+                    <li><a style="text-decoration: none; color: white;" href="#contact" onclick="parent.scrollToSection2('contact')">Contact us</a></li>
+                </ul>
+            </div>
+    
+        </header>
+    
+        <!-- slider -->
+    
+        <div class="slider">
+            <!-- list Items -->
+            <div class="list">
+                <div class="item active">
+                    <picture>
+                        <source class="sci" srcset="images/MD1.webp" media="(max-width: 768px)">
+                        <img src="images/img1.jpg" alt="Responsive image" class="sci" loading="lazy">
+                    </picture>
+                    <div class="content">
+                        <p class="p mt-3">Weddings</p>
+                        <h2 class="mt-3">Weddings</h2>
+                        <p class="pr text-white">
+                            More than just photos, these are the stolen glances, joyful tears, and quiet moments that make your love story unforgettable. Each frame, a promise preserved forever.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source class="sci" srcset="images/MD2.webp" media="(max-width: 768px)">
+                        <img src="images/img2.jpg" alt="Responsive image" class="sci" loading="lazy">
+                    </picture>
+                    <div class="content">
+                        <p  class="p">Fashion</p>
+                        <h2>Fashion</h2>
+                        <p class="pr text-white">
+                            Fashion is art in motion, Not just a look, but a statement. Style captured in every shot. Trends fade, but true style is forever. Captured in every silhouette.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source class="sci" srcset="images/MD3.webp" media="(max-width: 768px)">
+                        <img src="images/img3.jpg" alt="Responsive image" class="sci" loading="lazy">
+                    </picture>
+                    <div class="content">
+                        <p  class="p">Classic</p>
+                        <h2>Portfolios</h2>
+                        <p class="pr text-white">
+                            Classic portfolio photography isn’t just about perfect poses — it’s about capturing presence, poise, and personality that stand the test of time.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source class="sci" srcset="images/MD4.webp" media="(max-width: 768px)">
+                        <img src="images/img4.jpg" alt="Responsive image" class="sci" loading="lazy">
+                    </picture>
+                    <div class="content">
+                        <p  class="p">Bold Fashion</p>
+                        <h2 class="cust">Bold Fashion Photography</h2>
+                        <p class="pr text-white">
+                            Bold fashion photography isn't just about style — it's about owning the spotlight, breaking the mold, and turning every frame into a fearless expression of self.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <picture>
+                        <source class="sci" srcset="images/MD5.webp" media="(max-width: 768px)">
+                        <img src="images/img5.jpg" alt="Responsive image" class="sci" loading="lazy">
+                    </picture>
+                    <div class="content">
+                        <p  class="p">Non-Bengali</p>
+                        <h2 class="cust">Non-Bengali Weddings</h2>
+                        <p class="pr text-white">
+                            Every culture, every tradition, every love story deserves to be told with beauty and authenticity. Non-Bengali weddings, captured with heart, grace, and timeless charm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- button arrows -->
+            <div class="arrows">
+                <button class="changear" id="prev"><</button>
+                <button class="changear" id="next">></button>
+            </div>
+            <!-- thumbnail -->
+            <div class="thumbnail">
+                <div class="item active">
+                    <img src="images/img7.jpg" loading="lazy">
+                    <div class="content text-center">
+                        Weddings
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img8.jpg" loading="lazy">
+                    <div class="content text-center">
+                        Fashion
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img9.jpg" loading="lazy">
+                    <div class="content text-center">
+                        Portfolios
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img10.jpg" loading="lazy">
+                    <div class="content text-center">
+                        Bold Fashion
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img11.jpg" loading="lazy">
+                    <div class="content text-center">
+                        Non-Bengali
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Slider  -->
 
         <!-- social icons  -->
 
@@ -45,7 +182,7 @@
                   </svg></a></div>
             </div>
             <div class="mb-5 text-center">
-                <p style="font-size: 17px;" class="display-6 text-white">Stay connected with us anytime, anywhere! Click on the icons below to reach out directly through your favorite platform.</p>
+                <p style="font-size: 17px;" class="text-white">Stay connected with us anytime, anywhere! Click on the icons below to reach out directly through your favorite platform.</p>
                 <br>
             </div>
         </div>
