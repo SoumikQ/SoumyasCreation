@@ -258,6 +258,10 @@ header .menu{
   .thumbnail .item .content{
       font-size: 10px;
   }
+  .slider .list .item .content{
+    position: absolute;
+    top: 380px;
+}
   .slider .list .item .content h2{
       font-size: 40px;
   }
