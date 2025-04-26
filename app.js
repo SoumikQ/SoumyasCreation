@@ -51,6 +51,7 @@ function showSlider(){
         next.click();
     }, 5000)
 }
+
 function setPositionThumbnail () {
   if (window.innerWidth > 768) { // Only scroll on large screens
       let thumbnailActive = document.querySelector('.thumbnail .item.active');
@@ -62,7 +63,6 @@ function setPositionThumbnail () {
   }
 }
 
-
 // click thumbnail
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener('click', () => {
@@ -70,22 +70,3 @@ thumbnails.forEach((thumbnail, index) => {
       showSlider();
   })
 })
-
-function scrollToSection(pack) {
-  const target = document.getElementById('pack');
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-}
-function scrollToSection1(about) {
-    const target = document.getElementById('about');
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-  function scrollToSection2(contact) {
-    const target = document.getElementById('contact');
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  }
